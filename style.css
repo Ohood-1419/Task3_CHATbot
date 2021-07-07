@@ -1,0 +1,85 @@
+
+h1{
+    color: azure
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+  background: #A5E1AD; 
+  
+  }
+  
+  
+  .center{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .outer{
+    position: relative;
+    margin: 30px 70px;
+    background: #4CA1A3;
+  }
+  .button{
+    height: 70px;
+    width: 190px;
+    border-radius: 25px;
+  }
+  .circle{
+    height: 190px;
+    width: 170px;
+    border-radius: 40%;
+  }
+  .outer button, .outer span{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .outer button{
+    background: #511281;
+    color: #f2f2f2;
+    outline: none;
+    border: none;
+    font-size: 21px;
+    z-index: 9;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+  .button button{
+    height: 50px;
+    width: 180px;
+    border-radius: 50px;
+  }
+  .circle button{
+    height: 160px;
+    width: 160px;
+    border-radius: 40%;
+  }
+  .outer span{
+    height: 100%;
+    width: 100%;
+    background: inherit;
+  }
+  .button span{
+    border-radius: 40px;
+  }
+  .circle span{
+    border-radius: 40%;
+  }
+  .outer:hover span:nth-child(1){
+    filter: blur(7px);
+  }
+  .outer:hover span:nth-child(2){
+    filter: blur(14px);
+  }
+  
